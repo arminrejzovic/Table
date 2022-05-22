@@ -1,0 +1,9 @@
+.selected *{
+    background-color: red;
+    font-weight: bolder;
+}
+
+.unselected *{
+    background-color: white;
+    font-weight: normal;
+}
