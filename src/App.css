@@ -1,4 +1,17 @@
 body{
     font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+*{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }

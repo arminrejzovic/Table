@@ -23,7 +23,10 @@ function Table(props: TableProps) {
 
     return (
         <TableContext.Provider value={defaults}>
-            <table className={`${Styles.table} ${tableSize}`} style={{...props.style, captionSide: props.captionSide}}>
+            <table
+                className={`${Styles.table} ${tableSize}`}
+                style={{...props.style, captionSide: props.captionSide}}
+            >
                 {props.caption && <caption>{props.caption}</caption>}
                 {props.children}
             </table>

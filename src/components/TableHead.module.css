@@ -1,5 +1,7 @@
 .thead {
     text-align: center;
-    color: red;
+    color: black;
     font-variant: all-small-caps;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
 }

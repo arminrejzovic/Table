@@ -13,7 +13,7 @@ function TableCell(props: CellProps) {
     let cellClass = Styles[`${size}`];
 
     return (
-        <td className={cellClass} style={{textAlign: props.align}}>
+        <td className={`${Styles.tableCell} ${cellClass}`} style={{textAlign: props.align}}>
             {props.children}
         </td>
     );

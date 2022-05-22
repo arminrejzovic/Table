@@ -1,6 +1,7 @@
 .table{
     margin: auto;
-    background-color: red;
+    background-color: white;
+    border-collapse:collapse;
 }
 
 .sm{
