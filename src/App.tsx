@@ -30,12 +30,12 @@ function App() {
       <Table>
           <TableHead>
               <TableRow>
-                  <TableCell>Select</TableCell>
-                  <TableCell>Name</TableCell>
-                  <TableCell>Surname</TableCell>
-                  <TableCell>Age</TableCell>
+                  <TableCell align={"center"}>Select</TableCell>
+                  <TableCell align={"center"}>Name</TableCell>
+                  <TableCell align={"center"}>Surname</TableCell>
+                  <TableCell align={"center"}>Age</TableCell>
+                  <TableCell align={"center"}>Button</TableCell>
               </TableRow>
-              <div>VIOLATION</div>
           </TableHead>
           <TableBody>
               {

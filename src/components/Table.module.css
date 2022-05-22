@@ -1,0 +1,17 @@
+.table{
+    margin: auto;
+    background-color: red;
+}
+
+.sm{
+    width: max-content;
+}
+
+.md{
+    width: 50%;
+}
+
+.lg{
+    background-color: green;
+    width: 100%;
+}

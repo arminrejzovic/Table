@@ -8,7 +8,7 @@ interface HeadProps{
 
 function TableHead(props: HeadProps){
     return (
-        <thead className={Styles.whatever}>
+        <thead className={Styles.thead}>
             {props.children}
         </thead>
     );

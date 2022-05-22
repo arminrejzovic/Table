@@ -1,4 +1,6 @@
 import React from 'react';
+import { useTableContext } from "./Table";
+import Styles from "./TableCell.module.css";
 
 interface CellProps{
     children: any;
@@ -6,8 +8,12 @@ interface CellProps{
 }
 
 function TableCell(props: CellProps) {
+    const { size } = useTableContext();
+
+    let cellClass = Styles[`${size}`];
+
     return (
-        <td style={{textAlign: props.align}}>
+        <td className={cellClass} style={{textAlign: props.align}}>
             {props.children}
         </td>
     );
