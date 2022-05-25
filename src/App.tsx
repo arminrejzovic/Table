@@ -5,6 +5,7 @@ import TableRow from "./components/TableRow";
 import TableHead from "./components/TableHead";
 import TableBody from "./components/TableBody";
 import TableCell from "./components/TableCell";
+import Modal from "./components/Modal/Modal";
 
 interface User{
     id: number;
@@ -17,6 +18,8 @@ function App() {
     const [selectedItem, setSelectedItem] = useState(0);
     const [data, setData] = useState<User[]>([]);
 
+    const [modalOpen, setOpen] = useState(false);
+
     useEffect(() => {
         setData([
             {id: 1, name: "Mirel", surname: "Bajrić", age: 18},
@@ -27,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <Table>
+        <Table>
           <TableHead>
               <TableRow>
                   <TableCell align={"center"}>Select</TableCell>
@@ -59,7 +62,7 @@ function App() {
                               <TableCell>{person.name}</TableCell>
                               <TableCell>{person.surname}</TableCell>
                               <TableCell align={"right"}>{person.age}</TableCell>
-                              <TableCell>
+                              <TableCell align={"center"}>
                                   <button onClick={() => {
                                       setData(data.filter((item) => {
                                           return item.id !== person.id;
@@ -73,6 +76,35 @@ function App() {
 
           </TableBody>
       </Table>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
+        <button onClick={() => setOpen(!modalOpen)}>OPEN</button>
+        <Modal open={modalOpen} actionLeft={() => console.log("LEFT")} actionRight={() => console.log("RIGHT")}>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos error quisquam quod tenetur voluptates?
+                A animi ducimus est non nostrum officia saepe vel! A, assumenda dolore ipsam optio tempore veritatis.</p>
+        </Modal>
     </div>
   );
 }
