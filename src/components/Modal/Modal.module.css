@@ -10,12 +10,23 @@
 }
 
 .modal{
-    background-color: red;
+    background-color: white;
     display: grid;
     grid-template-rows: 1fr 8fr 1fr;
     padding-inline: 1.5rem;
     padding-block: 1rem;
     gap: 1.5rem;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.x{
+    user-select: none;
+    cursor: pointer;
 }
 
 .sm{

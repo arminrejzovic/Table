@@ -101,7 +101,13 @@ function App() {
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, amet consequatur culpa, debitis deleniti distinctio eaque earum error hic impedit maiores molestiae quas repellendus sapiente sed, soluta suscipit vitae!</p>
         <button onClick={() => setOpen(!modalOpen)}>OPEN</button>
-        <Modal open={modalOpen} actionLeft={() => console.log("LEFT")} actionRight={() => console.log("RIGHT")}>
+        <Modal
+            title={"MODAL DEMO"}
+            open={modalOpen}
+            actionLeft={() => console.log("LEFT")}
+            actionRight={() => console.log("RIGHT")}
+            onClose={() => setOpen(false)}
+        >
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos error quisquam quod tenetur voluptates?
                 A animi ducimus est non nostrum officia saepe vel! A, assumenda dolore ipsam optio tempore veritatis.</p>
         </Modal>
