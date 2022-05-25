@@ -32,7 +32,7 @@ function Modal(props: ModalProps) {
                     }}>X</h3>
                 </div>
                 <div>{props.children}</div>
-                <div>
+                <div className={Styles.actions}>
                     {
                         props.actionLeft &&
                         <button

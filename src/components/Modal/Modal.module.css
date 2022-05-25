@@ -24,6 +24,10 @@
     align-items: center;
 }
 
+.actions{
+    margin-left: auto;
+}
+
 .x{
     user-select: none;
     cursor: pointer;
